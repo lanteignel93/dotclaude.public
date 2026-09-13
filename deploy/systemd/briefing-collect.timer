@@ -1,0 +1,9 @@
+[Unit]
+Description=Pre-briefing collector at 07:15 local, weekdays
+
+[Timer]
+OnCalendar=Mon..Fri 07:15
+Persistent=true
+
+[Install]
+WantedBy=timers.target

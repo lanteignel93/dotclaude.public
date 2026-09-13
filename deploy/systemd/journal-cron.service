@@ -1,0 +1,9 @@
+[Unit]
+Description=Nightly headless-claude journal entry (journal-cron.sh)
+OnFailure=failure-alert@%n.service
+
+[Service]
+Type=oneshot
+TimeoutStartSec=30min
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/bin/bash -c '%h/dotclaude/.claude/bin/journal-cron.sh >> %h/.claude/logs/journal-cron.log 2>&1'

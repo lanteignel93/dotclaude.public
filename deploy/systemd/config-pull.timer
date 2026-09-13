@@ -1,0 +1,9 @@
+[Unit]
+Description=Nightly config pull at 05:30 local
+
+[Timer]
+OnCalendar=05:30
+Persistent=true
+
+[Install]
+WantedBy=timers.target

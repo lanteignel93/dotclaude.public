@@ -1,0 +1,4 @@
+# Repos config-pull.sh ff-only pulls each morning (one path per line).
+# Copy to ~/.config/dotclaude/config-repos and edit.
+~/dotclaude
+# ~/my-dotfiles

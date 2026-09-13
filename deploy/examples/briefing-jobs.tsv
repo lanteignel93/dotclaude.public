@@ -1,0 +1,8 @@
+# name	log_path	max_age_hours	error_regex	success_regex
+# One overnight/cron job per line, TAB-separated. Copy to
+# ~/.config/dotclaude/briefing-jobs.tsv and edit. max_age flags a log that
+# stopped being written (silently dead job). success_regex (optional)
+# suppresses error lines when a later success marker shows the run
+# recovered — retried-then-succeeded is not a morning alarm.
+nightly-data-update	~/pipelines/logs/update.log	30	error|traceback|fail	Pipeline complete
+weekly-report	/var/log/myjob/report.log	200	ERROR	Report sent

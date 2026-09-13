@@ -1,0 +1,9 @@
+[Unit]
+Description=Nightly journal at 22:00 local
+
+[Timer]
+OnCalendar=22:00
+Persistent=false
+
+[Install]
+WantedBy=timers.target

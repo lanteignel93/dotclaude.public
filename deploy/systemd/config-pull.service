@@ -1,0 +1,9 @@
+[Unit]
+Description=Nightly ff-only pull of config repos + editor-stack drift check
+OnFailure=failure-alert@%n.service
+
+[Service]
+Type=oneshot
+TimeoutStartSec=5min
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin:/snap/bin
+ExecStart=%h/dotclaude/.claude/bin/config-pull.sh

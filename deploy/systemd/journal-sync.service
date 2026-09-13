@@ -1,0 +1,8 @@
+[Unit]
+Description=Cross-box sync of ~/work-journal (commit/pull/push, union merge)
+OnFailure=failure-alert@%n.service
+
+[Service]
+Type=oneshot
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=%h/dotclaude/.claude/bin/journal-sync.sh
