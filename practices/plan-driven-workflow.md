@@ -1,5 +1,11 @@
 # Plan-driven workflow
 
+**Length convention (2026-09-14):** plans are the detail tier of the
+system — write them expansively (roughly 2x a "condensed" draft): full
+reasoning, worked examples, rejected alternatives and why. The brevity
+rules for tasks.md and project-ideas.md exist precisely because the depth
+belongs here instead.
+
 Adapted from a colleague's production-repo convention; generalized for any project. Apply when a project warrants a `plans/` directory — non-trivial design work, multi-step initiatives, anything where "let me write down the approach first" pays for itself.
 
 Mirrors the lifecycle pattern that `docs/incidents/` uses in larger codebases. Same DNA, different domain.

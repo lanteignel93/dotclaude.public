@@ -45,3 +45,9 @@ Create a new plan document from `~/dotclaude/templates/plan.md`. Arguments: `$AR
 
 - The full convention is in `~/dotclaude/practices/plan-driven-workflow.md`.
 - Required-sections matrix kicks in at promotion to `actionable`. Speculative plans can be sparse.
+
+## Length
+
+Plans err expansive — when filling one in (here or later), write the full
+reasoning, not a summary. Roughly 2x what feels condensed is the target;
+tasks and ideas stay terse because the detail lives in the plan.

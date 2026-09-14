@@ -8,6 +8,10 @@
 > Status: speculative → actionable → in-flight → complete (or archived).
 > See `~/dotclaude/practices/plan-driven-workflow.md` for the lifecycle convention.
 > Delete this blockquote, any sections you don't use, and any guidance text in italics before committing.
+> Length: plans are the detail tier — err expansive, not terse. Aim for
+> roughly 2x what feels "condensed enough": full reasoning in Problem and
+> Approach, worked examples, rejected alternatives with why. Tasks and
+> idea lines stay short because the depth lives HERE.
 
 ---
 
