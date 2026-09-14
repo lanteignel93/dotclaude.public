@@ -1,7 +1,7 @@
 # Plan-driven workflow
 
 **Length convention (2026-09-14):** plans are the detail tier of the
-system — write them expansively (~75% longer than a "condensed" draft): full
+system — write them expansively (roughly 2x a "condensed" draft — longer than plans have been to date, never shorter): full
 reasoning, worked examples, rejected alternatives and why. The brevity
 rules for tasks.md and project-ideas.md exist precisely because the depth
 belongs here instead.
