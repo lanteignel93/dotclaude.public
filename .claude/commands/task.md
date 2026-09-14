@@ -75,3 +75,10 @@ Arguments: $ARGUMENTS
 - Invent recurrence rules outside the supported grammar.
 - Commit anything in `~/work-journal` — the journal repo is committed
   manually, never by tooling.
+
+## Brevity
+
+Keep task text short (aim under ~90 characters of text). A task line is a
+handle, not a document — put the detail in the matching research note or
+projects.md block and reference it as `(detail: <path>)`. Long lines make
+the board unreadable and bloat every session-start injection.

@@ -51,3 +51,10 @@ Archived:
 - The domain categories and the 8-week staleness line are defaults — the user can override per idea or for the whole run.
 - Idempotent: re-running on an already-clean file just reviews stale candidates and any new inbox items.
 - The boundary with plans: this file holds one-liners. Structured thinking belongs in a plan — that's what the `/plan` promotion is for.
+
+## Line format (keep files readable)
+
+Wrap every idea at ~84 columns, 2-space continuation indents, metadata
+(`_<category> · captured ... · updated/archived ...(reason)_`) on its own
+indented line. When rewriting the file, re-wrap anything that has grown
+past that.
