@@ -40,6 +40,12 @@ if [ -n "$(git status --porcelain)" ]; then
         || { log "FATAL: commit failed"; exit 1; }
 fi
 
+# 1b. Snapshot projects.md (committed local state) for the newest-wins
+# guard in step 4 — union merges and stale writers have both clobbered
+# dashboard blocks (4x observed); the guard restores any block whose
+# _updated went backward across the merge.
+cp projects.md "$LOG_DIR/projects.pre-sync" 2>/dev/null || true
+
 # 2. Pull (union driver auto-keeps both sides for *.md / *.tsv).
 if ! git pull --no-rebase -q 2>>"$LOG"; then
     if [ -e .git/MERGE_HEAD ]; then
@@ -78,6 +84,20 @@ if command -v python3 >/dev/null && [ -f "$HOME/dotclaude/.claude/bin/tasks.py" 
                    git commit -q -m "sync: dedup union-merge ghosts in tasks.md" \
                        && git push -q 2>>"$LOG" \
                        && log "dedup commit pushed"
+               fi ;;
+        esac
+    fi
+    if [ -f "$HOME/dotclaude/.claude/bin/projects_dedup.py" ] && [ -f projects.md ]; then
+        pd=$(python3 "$HOME/dotclaude/.claude/bin/projects_dedup.py" projects.md \
+            --baseline "$LOG_DIR/projects.pre-sync" 2>&1)
+        case "$pd" in
+            "clean — no ghosts") : ;;
+            *) log "projects guard: $pd"
+               if [ -n "$(git status --porcelain projects.md)" ]; then
+                   git add projects.md
+                   git commit -q -m "sync: projects.md newest-wins repair" \
+                       && git push -q 2>>"$LOG" \
+                       && log "projects repair pushed"
                fi ;;
         esac
     fi
