@@ -38,6 +38,12 @@ Minimize interrupts; maximize information per checkpoint.
   validation prepared: the narrowest tests for the new logic (already run,
   output shown) plus a recipe to step through the key logic in a debugger.
   Verification is a joint step, not a claim.
+- **Standard scaffold.** Non-trivial builds carry `debug_walkthroughs/`
+  (seeded, debugger-ready scripts verifying each important logic unit —
+  the joint-verification recipe as a committed artifact), incremental
+  `tests/` that land with each step, `docs/` (how-to-read + decisions),
+  and `notebooks/` for research. Convention:
+  `~/dotclaude/practices/project-scaffold.md`.
 - **Validation notebooks.** For anything data/numeric, generate a scratch
   notebook (temporary is fine) visualizing what was built — inputs,
   outputs, edge behavior. Visual evidence beats prose.
@@ -104,6 +110,7 @@ When relevant, read these inline — they're context, not auto-loaded:
   write your own domain file per `agents/README.md`.
 - `~/dotclaude/agents/quant_specs/quant_methodology.md` — statistical
   rigor: hypothesis testing, effect sizes, backtesting standards.
+- `~/dotclaude/practices/project-scaffold.md` — standard project directories: debug walkthroughs, incremental tests, docs, notebooks.
 - `~/dotclaude/practices/plan-driven-workflow.md` — plan lifecycle.
 - `~/dotclaude/practices/tasks.md` — task grammar, recurrence semantics,
   `/task` usage, tasks-vs-plans-vs-ideas boundaries.

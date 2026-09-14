@@ -8,6 +8,8 @@ Working conventions read on demand (not auto-loaded). Current contents:
   semantics, section routing, Finished/archive flow, engine operations.
 - `plan-driven-workflow.md` — the plan lifecycle convention, generalized
   for any project.
+- `project-scaffold.md` — standard project directories: debug
+  walkthroughs, incremental tests, docs, notebooks.
 - `tmux-organization.md` — session/window layout conventions across your
   machines.
 
