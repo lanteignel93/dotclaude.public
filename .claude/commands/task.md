@@ -78,7 +78,7 @@ Arguments: $ARGUMENTS
 
 ## Brevity
 
-Keep task text short (aim under ~90 characters of text). A task line is a
+Keep task text short (aim under ~135 characters of text). A task line is a
 handle, not a document — put the detail in the matching research note or
 projects.md block and reference it as `(detail: <path>)`. Long lines make
 the board unreadable and bloat every session-start injection.

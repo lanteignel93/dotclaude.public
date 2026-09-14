@@ -54,7 +54,7 @@ Archived:
 
 ## Line format (keep files readable)
 
-Wrap every idea at ~84 columns, 2-space continuation indents, metadata
+Wrap every idea at ~126 columns, 2-space continuation indents, metadata
 (`_<category> · captured ... · updated/archived ...(reason)_`) on its own
 indented line. When rewriting the file, re-wrap anything that has grown
 past that.

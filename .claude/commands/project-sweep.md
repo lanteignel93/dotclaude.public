@@ -49,7 +49,7 @@ organizes what this collects.
    ```
 
    Keep the one-liner tight and concrete. A day with no ideas is normal.
-   FORMAT: wrap at ~84 columns with 2-space continuation indents; the
+   FORMAT: wrap at ~126 columns with 2-space continuation indents; the
    `_source ..._` metadata goes on its own indented line — never let a
    bullet run as one long line.
 
