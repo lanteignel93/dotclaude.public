@@ -49,5 +49,5 @@ Create a new plan document from `~/dotclaude/templates/plan.md`. Arguments: `$AR
 ## Length
 
 Plans err expansive — when filling one in (here or later), write the full
-reasoning, not a summary. Roughly 2x what feels condensed is the target;
+reasoning, not a summary. ~75% longer than what feels condensed is the target;
 tasks and ideas stay terse because the detail lives in the plan.
